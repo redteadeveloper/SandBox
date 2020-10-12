@@ -1,2 +1,2 @@
-# sANDBox
- sANDBox Programming Language
+# SandBox
+SandBox Programming Language
