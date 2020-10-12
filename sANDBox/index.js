@@ -1,10 +1,11 @@
 var antlr4 = require('antlr4');
+var fs = require('fs')
+
 var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
 var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
 var customListener = require('./customlistner.js').customListener
 
-var input = "show 12"
-
+var input = fs.readFileSync("./test.snbx").toString();
 var chars = new antlr4.InputStream(input);
 var lexer = new MyGrammarLexer(chars);
 var tokens  = new antlr4.CommonTokenStream(lexer);
