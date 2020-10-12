@@ -1,2 +1,3 @@
 # SandBox
-SandBox Programming Language
+SandBox is a lightweight programming language. \
+Still in development, stay tuned!
