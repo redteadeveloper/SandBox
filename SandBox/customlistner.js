@@ -7,16 +7,22 @@ class customListener extends MyGrammarListener {
         this._hashmap = new Map()
     }
 
-    exitShow(ctx) {
-        if (ctx.INT() != null) {
+    exitPrint(ctx) {
+        if (ctx.INT() != null && ctx.STRING() == null && ctx.VAR() == null) {
             console.log(parseInt(ctx.INT()))
+        } else if (ctx.INT() == null && ctx.STRING() != null && ctx.VAR() == null) {
+            console.log(ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, ""))
         } else {
             console.log(this._hashmap.get(ctx.VAR().toString()))
         }
     }
 
     exitLet(ctx) {
-        this._hashmap.set(ctx.VAR().toString(), parseInt(ctx.INT()))
+        if (ctx.INT() != null && ctx.STRING() == null) {
+            this._hashmap.set(ctx.VAR().toString(), parseInt(ctx.INT()))
+        } else {
+            this._hashmap.set(ctx.VAR().toString(), ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, ""))
+        }
     }
 
 }

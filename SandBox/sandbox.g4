@@ -2,13 +2,20 @@ grammar sandbox;
 
 program : statement+;
 
-statement : let | show ;
+statement : let | print ;
 
-let : VAR '=' INT ;
-show : 'show' (INT | VAR) ;
+let : 'let' VAR '=' (INT | STRING) ';' ;
+print : 'print' '(' (INT | VAR | STRING) ')' ';' ;
 
 fragment NUMBER : '0'..'9' ;
+fragment VARCHAR : ('A'..'Z') | ('a'..'z') | '_' ;
+fragment STRING_CHAR : ~('"' | '\'' | '\\' | '\r' | '\n');
 
-VAR : [a-z]+ ;
+VAR : VARCHAR+ ;
 INT : NUMBER+ ;
-WS : [ \n\t]+ -> skip;
+STRING : ('\'' STRING_CHAR* '\'' | '"' STRING_CHAR* '"') ;
+
+COMMENT : '/*' .*? '*/' -> skip ;
+LINE_COMMENT : '//' ~[\r\n]* -> skip ;
+
+WS : [ \n\t]+ -> skip ;

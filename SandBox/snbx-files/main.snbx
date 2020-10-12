@@ -1,3 +1,10 @@
-a = 69
-show a
-show 420
+print("Hello World!");
+print(" ");
+
+let sample_string = "Hi";
+print(sample_string);
+
+print(' ');
+
+let sample_int = 123;
+print(sample_int);

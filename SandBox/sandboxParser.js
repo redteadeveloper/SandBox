@@ -1,28 +1,31 @@
 // Generated from sandbox.g4 by ANTLR 4.8
 // jshint ignore: start
-var antlr4 = require('antlr4');
+var antlr4 = require('antlr4/index');
 var sandboxListener = require('./sandboxListener').sandboxListener;
 var grammarFileName = "sandbox.g4";
 
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003\u0007\u001b\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004",
-    "\t\u0004\u0004\u0005\t\u0005\u0003\u0002\u0006\u0002\f\n\u0002\r\u0002",
+    "\u0003\u000e \u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
+    "\u0004\u0004\u0005\t\u0005\u0003\u0002\u0006\u0002\f\n\u0002\r\u0002",
     "\u000e\u0002\r\u0003\u0003\u0003\u0003\u0005\u0003\u0012\n\u0003\u0003",
-    "\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0005\u0003\u0005\u0003",
-    "\u0005\u0003\u0005\u0002\u0002\u0006\u0002\u0004\u0006\b\u0002\u0003",
-    "\u0003\u0002\u0005\u0006\u0002\u0018\u0002\u000b\u0003\u0002\u0002\u0002",
-    "\u0004\u0011\u0003\u0002\u0002\u0002\u0006\u0013\u0003\u0002\u0002\u0002",
-    "\b\u0017\u0003\u0002\u0002\u0002\n\f\u0005\u0004\u0003\u0002\u000b\n",
-    "\u0003\u0002\u0002\u0002\f\r\u0003\u0002\u0002\u0002\r\u000b\u0003\u0002",
-    "\u0002\u0002\r\u000e\u0003\u0002\u0002\u0002\u000e\u0003\u0003\u0002",
-    "\u0002\u0002\u000f\u0012\u0005\u0006\u0004\u0002\u0010\u0012\u0005\b",
-    "\u0005\u0002\u0011\u000f\u0003\u0002\u0002\u0002\u0011\u0010\u0003\u0002",
-    "\u0002\u0002\u0012\u0005\u0003\u0002\u0002\u0002\u0013\u0014\u0007\u0005",
-    "\u0002\u0002\u0014\u0015\u0007\u0003\u0002\u0002\u0015\u0016\u0007\u0006",
-    "\u0002\u0002\u0016\u0007\u0003\u0002\u0002\u0002\u0017\u0018\u0007\u0004",
-    "\u0002\u0002\u0018\u0019\t\u0002\u0002\u0002\u0019\t\u0003\u0002\u0002",
-    "\u0002\u0004\r\u0011"].join("");
+    "\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003",
+    "\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0003",
+    "\u0005\u0002\u0002\u0006\u0002\u0004\u0006\b\u0002\u0004\u0003\u0002",
+    "\n\u000b\u0003\u0002\t\u000b\u0002\u001d\u0002\u000b\u0003\u0002\u0002",
+    "\u0002\u0004\u0011\u0003\u0002\u0002\u0002\u0006\u0013\u0003\u0002\u0002",
+    "\u0002\b\u0019\u0003\u0002\u0002\u0002\n\f\u0005\u0004\u0003\u0002\u000b",
+    "\n\u0003\u0002\u0002\u0002\f\r\u0003\u0002\u0002\u0002\r\u000b\u0003",
+    "\u0002\u0002\u0002\r\u000e\u0003\u0002\u0002\u0002\u000e\u0003\u0003",
+    "\u0002\u0002\u0002\u000f\u0012\u0005\u0006\u0004\u0002\u0010\u0012\u0005",
+    "\b\u0005\u0002\u0011\u000f\u0003\u0002\u0002\u0002\u0011\u0010\u0003",
+    "\u0002\u0002\u0002\u0012\u0005\u0003\u0002\u0002\u0002\u0013\u0014\u0007",
+    "\u0003\u0002\u0002\u0014\u0015\u0007\t\u0002\u0002\u0015\u0016\u0007",
+    "\u0004\u0002\u0002\u0016\u0017\t\u0002\u0002\u0002\u0017\u0018\u0007",
+    "\u0005\u0002\u0002\u0018\u0007\u0003\u0002\u0002\u0002\u0019\u001a\u0007",
+    "\u0006\u0002\u0002\u001a\u001b\u0007\u0007\u0002\u0002\u001b\u001c\t",
+    "\u0003\u0002\u0002\u001c\u001d\u0007\b\u0002\u0002\u001d\u001e\u0007",
+    "\u0005\u0002\u0002\u001e\t\u0003\u0002\u0002\u0002\u0004\r\u0011"].join("");
 
 
 var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -31,11 +34,12 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, "'='", "'show'" ];
+var literalNames = [ null, "'let'", "'='", "';'", "'print'", "'('", "')'" ];
 
-var symbolicNames = [ null, null, null, "VAR", "INT", "WS" ];
+var symbolicNames = [ null, null, null, null, null, null, null, "VAR", "INT", 
+                      "STRING", "COMMENT", "LINE_COMMENT", "WS" ];
 
-var ruleNames =  [ "program", "statement", "let", "show" ];
+var ruleNames =  [ "program", "statement", "let", "print" ];
 
 function sandboxParser (input) {
 	antlr4.Parser.call(this, input);
@@ -58,14 +62,21 @@ Object.defineProperty(sandboxParser.prototype, "atn", {
 sandboxParser.EOF = antlr4.Token.EOF;
 sandboxParser.T__0 = 1;
 sandboxParser.T__1 = 2;
-sandboxParser.VAR = 3;
-sandboxParser.INT = 4;
-sandboxParser.WS = 5;
+sandboxParser.T__2 = 3;
+sandboxParser.T__3 = 4;
+sandboxParser.T__4 = 5;
+sandboxParser.T__5 = 6;
+sandboxParser.VAR = 7;
+sandboxParser.INT = 8;
+sandboxParser.STRING = 9;
+sandboxParser.COMMENT = 10;
+sandboxParser.LINE_COMMENT = 11;
+sandboxParser.WS = 12;
 
 sandboxParser.RULE_program = 0;
 sandboxParser.RULE_statement = 1;
 sandboxParser.RULE_let = 2;
-sandboxParser.RULE_show = 3;
+sandboxParser.RULE_print = 3;
 
 
 function ProgramContext(parser, parent, invokingState) {
@@ -128,7 +139,7 @@ sandboxParser.prototype.program = function() {
             this.state = 11; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
-        } while(_la===sandboxParser.T__1 || _la===sandboxParser.VAR);
+        } while(_la===sandboxParser.T__0 || _la===sandboxParser.T__3);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -164,8 +175,8 @@ StatementContext.prototype.let = function() {
     return this.getTypedRuleContext(LetContext,0);
 };
 
-StatementContext.prototype.show = function() {
-    return this.getTypedRuleContext(ShowContext,0);
+StatementContext.prototype.print = function() {
+    return this.getTypedRuleContext(PrintContext,0);
 };
 
 StatementContext.prototype.enterRule = function(listener) {
@@ -193,15 +204,15 @@ sandboxParser.prototype.statement = function() {
         this.state = 15;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
-        case sandboxParser.VAR:
+        case sandboxParser.T__0:
             this.enterOuterAlt(localctx, 1);
             this.state = 13;
             this.let();
             break;
-        case sandboxParser.T__1:
+        case sandboxParser.T__3:
             this.enterOuterAlt(localctx, 2);
             this.state = 14;
-            this.show();
+            this.print();
             break;
         default:
             throw new antlr4.error.NoViableAltException(this);
@@ -245,6 +256,10 @@ LetContext.prototype.INT = function() {
     return this.getToken(sandboxParser.INT, 0);
 };
 
+LetContext.prototype.STRING = function() {
+    return this.getToken(sandboxParser.STRING, 0);
+};
+
 LetContext.prototype.enterRule = function(listener) {
     if(listener instanceof sandboxListener ) {
         listener.enterLet(this);
@@ -266,14 +281,26 @@ sandboxParser.prototype.let = function() {
 
     var localctx = new LetContext(this, this._ctx, this.state);
     this.enterRule(localctx, 4, sandboxParser.RULE_let);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 17;
-        this.match(sandboxParser.VAR);
-        this.state = 18;
         this.match(sandboxParser.T__0);
+        this.state = 18;
+        this.match(sandboxParser.VAR);
         this.state = 19;
-        this.match(sandboxParser.INT);
+        this.match(sandboxParser.T__1);
+        this.state = 20;
+        _la = this._input.LA(1);
+        if(!(_la===sandboxParser.INT || _la===sandboxParser.STRING)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
+        this.state = 21;
+        this.match(sandboxParser.T__2);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -289,7 +316,7 @@ sandboxParser.prototype.let = function() {
 };
 
 
-function ShowContext(parser, parent, invokingState) {
+function PrintContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -298,56 +325,66 @@ function ShowContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = sandboxParser.RULE_show;
+    this.ruleIndex = sandboxParser.RULE_print;
     return this;
 }
 
-ShowContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ShowContext.prototype.constructor = ShowContext;
+PrintContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+PrintContext.prototype.constructor = PrintContext;
 
-ShowContext.prototype.INT = function() {
+PrintContext.prototype.INT = function() {
     return this.getToken(sandboxParser.INT, 0);
 };
 
-ShowContext.prototype.VAR = function() {
+PrintContext.prototype.VAR = function() {
     return this.getToken(sandboxParser.VAR, 0);
 };
 
-ShowContext.prototype.enterRule = function(listener) {
+PrintContext.prototype.STRING = function() {
+    return this.getToken(sandboxParser.STRING, 0);
+};
+
+PrintContext.prototype.enterRule = function(listener) {
     if(listener instanceof sandboxListener ) {
-        listener.enterShow(this);
+        listener.enterPrint(this);
 	}
 };
 
-ShowContext.prototype.exitRule = function(listener) {
+PrintContext.prototype.exitRule = function(listener) {
     if(listener instanceof sandboxListener ) {
-        listener.exitShow(this);
+        listener.exitPrint(this);
 	}
 };
 
 
 
 
-sandboxParser.ShowContext = ShowContext;
+sandboxParser.PrintContext = PrintContext;
 
-sandboxParser.prototype.show = function() {
+sandboxParser.prototype.print = function() {
 
-    var localctx = new ShowContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 6, sandboxParser.RULE_show);
+    var localctx = new PrintContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 6, sandboxParser.RULE_print);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 21;
-        this.match(sandboxParser.T__1);
-        this.state = 22;
+        this.state = 23;
+        this.match(sandboxParser.T__3);
+        this.state = 24;
+        this.match(sandboxParser.T__4);
+        this.state = 25;
         _la = this._input.LA(1);
-        if(!(_la===sandboxParser.VAR || _la===sandboxParser.INT)) {
+        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << sandboxParser.VAR) | (1 << sandboxParser.INT) | (1 << sandboxParser.STRING))) !== 0))) {
         this._errHandler.recoverInline(this);
         }
         else {
         	this._errHandler.reportMatch(this);
             this.consume();
         }
+        this.state = 26;
+        this.match(sandboxParser.T__5);
+        this.state = 27;
+        this.match(sandboxParser.T__2);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
