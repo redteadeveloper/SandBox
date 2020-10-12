@@ -6,6 +6,7 @@ var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
 var customListener = require('./customlistner.js').customListener
 
 var input = fs.readFileSync("./test.snbx").toString();
+
 var chars = new antlr4.InputStream(input);
 var lexer = new MyGrammarLexer(chars);
 var tokens  = new antlr4.CommonTokenStream(lexer);
