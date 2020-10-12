@@ -1,3 +1,10 @@
+// This is line comment
+
+/*
+This is
+box comment
+*/
+
 print("Hello World!");
 print(" ");
 
