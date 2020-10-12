@@ -8,17 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redteadeveloper/sANDBox.git"
+    "url": "git+https://github.com/redteadeveloper/SandBox.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redteadeveloper/sANDBox/issues"
+    "url": "https://github.com/redteadeveloper/SandBox/issues"
   },
-  "homepage": "https://github.com/redteadeveloper/sANDBox#readme",
-  "devDependencies": {
-    "antlr4-tool": "^1.1.1"
-  },
+  "homepage": "https://github.com/redteadeveloper/SandBox#readme",
+  "devDependencies": {},
   "dependencies": {
     "antlr4": "^4.8.0"
   }

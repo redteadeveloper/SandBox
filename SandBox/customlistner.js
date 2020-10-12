@@ -8,13 +8,11 @@ class customListener extends MyGrammarListener {
     }
 
     exitShow(ctx) {
-        console.log("==============\nRESULT:\n--------------")
         if (ctx.INT() != null) {
             console.log(parseInt(ctx.INT()))
         } else {
             console.log(this._hashmap.get(ctx.VAR().toString()))
         }
-        console.log("==============")
     }
 
     exitLet(ctx) {
