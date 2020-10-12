@@ -1,0 +1,26 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "sANDBox Programming Language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-parser": "antlr4 -Dlanguage=JavaScript sandbox.g4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redteadeveloper/sANDBox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redteadeveloper/sANDBox/issues"
+  },
+  "homepage": "https://github.com/redteadeveloper/sANDBox#readme",
+  "devDependencies": {
+    "antlr4-tool": "^1.1.1"
+  },
+  "dependencies": {
+    "antlr4": "^4.8.0"
+  }
+}

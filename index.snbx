@@ -1,0 +1,5 @@
+a = 1
+b = 12
+show 10
+show a
+show b
