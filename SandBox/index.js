@@ -5,7 +5,7 @@ var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
 var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
 var customListener = require('./customlistner.js').customListener
 
-console.log("\n### SandBox Programming Language 0.0.2 ###\n")
+console.log("\n### SandBox Programming Language 0.0.3 ###\n")
 console.log("======================")
 console.log("RESULT:")
 console.log("----------------------")

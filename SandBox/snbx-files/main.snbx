@@ -5,13 +5,18 @@ This is
 box comment
 */
 
-print("Hello World!");
-print(" ");
+// Printing string
+print "Hello World!";
+print "";
 
+// Declaring variables and printing
 let sample_string = "Hi";
-print(sample_string);
+print sample_string;
 
-print(' ');
+print "";
 
-let sample_int = 123;
-print(sample_int);
+// Declaring protected variables
+let protected a = 123;
+print a;
+
+let a = "Hello"; // Error
