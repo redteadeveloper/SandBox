@@ -31,5 +31,5 @@ let e = "asdf"
 convType(e, Boolean);
 print e;    // false
 ```
-When converting to boolean, any string other than "true" will return false.
+When converting to boolean, any string other than "true" will return false. \
 Protected variables will remain protected after converted.
