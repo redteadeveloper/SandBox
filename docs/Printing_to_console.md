@@ -10,6 +10,16 @@ print "Hello World!";   // Hello World!
 print 123;    // 123
 ```
 
+## Printing double
+```
+print 1.23;   // 1.23
+```
+
+## Printing boolean
+```
+print true;   //true
+```
+
 ## Printing variable
 ```
 let a = "Hello";
