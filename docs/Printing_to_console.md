@@ -10,7 +10,7 @@ print "Hello World!";   // Hello World!
 print 123;    // 123
 ```
 
-## Printing double
+## Printing float
 ```
 print 1.23;   // 1.23
 ```
