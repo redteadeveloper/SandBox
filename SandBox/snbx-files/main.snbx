@@ -12,7 +12,7 @@ print 123;
 print "";
 
 // Declaring variables and printing
-let a = "Hi";
+let a = 123;
 print a;
 
 let b = true;
@@ -20,6 +20,21 @@ print b;
 
 let c = 1.23;
 print c;
+
+print "";
+
+// Converting variable type
+let d = 123;
+convType(a, String);
+print a;
+
+let e = "123abc";
+convType(e, Int);
+print e;
+
+let f = "abc1.23abc";
+convType(f, Float);
+print f;
 
 print "";
 

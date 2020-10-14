@@ -47,5 +47,14 @@ sandboxListener.prototype.exitPrint = function(ctx) {
 };
 
 
+// Enter a parse tree produced by sandboxParser#convtype.
+sandboxListener.prototype.enterConvtype = function(ctx) {
+};
+
+// Exit a parse tree produced by sandboxParser#convtype.
+sandboxListener.prototype.exitConvtype = function(ctx) {
+};
+
+
 
 exports.sandboxListener = sandboxListener;
