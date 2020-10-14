@@ -15,7 +15,6 @@ var input = fs.readFileSync("./snbx-files/main.snbx").toString();
 var chars = new antlr4.InputStream(input);
 var lexer = new MyGrammarLexer(chars);
 lexer.removeErrorListeners()
-
 var tokens  = new antlr4.CommonTokenStream(lexer);
 var parser = new MyGrammarParser(tokens);
 parser.buildParseTrees = true;

@@ -5,18 +5,26 @@ This is
 box comment
 */
 
-// Printing string
+// Printing
 print "Hello World!";
+print 123;
+
 print "";
 
 // Declaring variables and printing
-let sample_string = "Hi";
-print sample_string;
+let a = "Hi";
+print a;
+
+let b = true;
+print b;
+
+let c = 1.23;
+print c;
 
 print "";
 
 // Declaring protected variables
-let protected a = 123;
-print a;
+let protected prot_var = "Hi";
+print prot_var;
 
-let a = "Hello"; // Error
+let prot_var = 1.5;  // Error
