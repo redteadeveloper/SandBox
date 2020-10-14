@@ -10,7 +10,7 @@ print "Hello World!";   // Hello World!
 print 123;    // 123
 ```
 
-## Printing variables
+## Printing variable
 ```
 let a = "Hello";
 print a;    // Hello
