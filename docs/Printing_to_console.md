@@ -2,16 +2,16 @@
 
 ## Printing string
 ```
-print "Hello World!"; // Hello World!
+print "Hello World!";   // Hello World!
 ```
 
 ## Printing integer
 ```
-print 123; // 123
+print 123;    // 123
 ```
 
 ## Printing variables
 ```
 let a = "Hello";
-print a; // Hello
+print a;    // Hello
 ```
