@@ -3,7 +3,7 @@
 ```
 let a = "Hi";   // String
 let b = 123;    // Integer
-let c = 1.23    // Double
+let c = 1.23    // Float
 let d = true    // Boolean
 ```
 
