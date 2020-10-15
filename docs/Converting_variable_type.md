@@ -7,6 +7,11 @@
 - String
 
 ## Converting variable type
+### Usage
+```
+convType(<variable>, <type>);
+```
+### Examples
 ```
 let a = 123;
 convType(a, String);
