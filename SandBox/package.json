@@ -1,0 +1,15 @@
+{
+  "name": "sandbox",
+  "version": "0.1.0",
+  "description": "SandBox Programming Language",
+  "main": "index.js",
+  "dependencies": {
+    "antlr4": "^4.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

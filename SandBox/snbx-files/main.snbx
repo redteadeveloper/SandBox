@@ -1,45 +1,6 @@
-// This is line comment
+let a = 2;
+let b = 3;
 
-/*
-This is
-box comment
-*/
+print a^b;
 
-// Printing
-print "Hello World!";
-print 123;
-
-print "";
-
-// Declaring variables and printing
-let a = 123;
-print a;
-
-let b = true;
-print b;
-
-let c = 1.23;
-print c;
-
-print "";
-
-// Converting variable type
-let d = 123;
-convType(a, String);
-print a;
-
-let e = "123abc";
-convType(e, Int);
-print e;
-
-let f = "abc1.23abc";
-convType(f, Float);
-print f;
-
-print "";
-
-// Declaring protected variables
-let protected prot_var = "Hi";
-print prot_var;
-
-let prot_var = 1.5;  // Error
+if a != b print "h";

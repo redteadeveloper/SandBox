@@ -3,9 +3,9 @@ var fs = require('fs')
 
 var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
 var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
-var customListener = require('./customlistner.js').customListener
+var customVisitor = require('./customVisitor.js').customVisitor;
 
-console.log("\n### SandBox Programming Language 0.0.2 ###\n")
+console.log("\n### SandBox Programming Language 0.1.0 ###\n")
 console.log("======================")
 console.log("RESULT:")
 console.log("----------------------")
@@ -22,7 +22,7 @@ parser.buildParseTrees = true;
 
 var tree = parser.program();
 
-var customListener = new customListener()
-antlr4.tree.ParseTreeWalker.DEFAULT.walk(customListener, tree);
+var visitor = new customVisitor()
+visitor.visit(tree)
 
 console.log("======================\n")
