@@ -1,4 +1,4 @@
-# If else statement
+# If else Statement
 
 ## Usage
 ```
