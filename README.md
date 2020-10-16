@@ -1,5 +1,5 @@
 <h1 align="center">SandBox</h1>
-<h3 align="center">"Simple & lightweight"</h3>
+<h2 align="center">"The simpler, the better."</h2>
 
 <div align='center'>
   
