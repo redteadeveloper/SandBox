@@ -15,7 +15,7 @@ You can put as many ``else if`` as you want, and one or no ``else``.
 
 ## Example
 ```
-let a = 3;
+let a = 5;
 
 if a > 3 {
     print "a is greater than 3.";
