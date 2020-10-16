@@ -1,4 +1,4 @@
-let a = 2;
+let a = 5;
 let b = 4;
 
 print "a = " + a + ", b = " + b;
@@ -13,7 +13,7 @@ print "";
 
 if a < 3 && b > 0 {
     print "Hello";
-} else if a >= 3 && b > 0 {
+} else if a >= 3 && b < 0 {
     print "Hi";
 } else {
     print "Hey";

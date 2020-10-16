@@ -8,7 +8,7 @@ statement : let | print | ifstat | whilestat ;
 
 let : LET PROT? VAR ASSIGN expr SCOL ;
 print : PRINT expr SCOL ;
-ifstat : IF condition_block (ELSIF condition_block)* (ELSE stat_block)? ;
+ifstat : IF condition_block (ELSE IF condition_block)* (ELSE stat_block)? ;
 whilestat : WHILE expr stat_block ;
 
 condition_block : expr stat_block ;
@@ -61,7 +61,6 @@ LET : 'let' ;
 PRINT : 'print' ;
 IF : 'if';
 ELSE : 'else';
-ELSIF : 'elsif' ;
 WHILE : 'while' ;
 NIL : 'nil';
 
