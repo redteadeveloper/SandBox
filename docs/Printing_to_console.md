@@ -28,3 +28,9 @@ let protected b = 123;
 print a;    // Hello
 print b;    // 123
 ```
+
+## Printing expression
+```
+print "Hello " + "World";   // Hello World
+print 1 + 2;                // 3
+print 123 == 123            // true
