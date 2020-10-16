@@ -33,4 +33,4 @@ print b;    // 123
 ```
 print "Hello " + "World";   // Hello World
 print 1 + 2;                // 3
-print 123 == 123            // true
+print 123 == 123;           // true
