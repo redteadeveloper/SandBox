@@ -36,3 +36,11 @@ if a > 3 {
     print "a is equal to 3.";
 }
 ```
+```
+let b = 3;
+
+if b == 5
+    print "a is equal to 5.";
+else
+    print "a isn't equal to 5.";
+```
