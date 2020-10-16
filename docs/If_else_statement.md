@@ -14,17 +14,7 @@ if <expression> {
 
 You can put as many ``else if`` as you want, and one or no ``else``. 
 
-Braces are also optional. Therefore, the following is also a valid code.
-```
-if <expression>
-    ...
-else if <expression>
-    ...
-else
-    ...
-```
-
-## Examples
+## Example
 ```
 let a = 5;
 
@@ -35,12 +25,4 @@ if a > 3 {
 } else {
     print "a is equal to 3.";
 }
-```
-```
-let b = 3;
-
-if b == 5
-    print "a is equal to 5.";
-else
-    print "a is not equal to 5.";
 ```
