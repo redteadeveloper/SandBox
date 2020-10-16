@@ -1,3 +1,3 @@
 # Sandbox documentation
 
-This is outdated. Will be updated soon.
+Documentation for SandBox version ``0.1.0``.
