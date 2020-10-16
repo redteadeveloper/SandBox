@@ -2,9 +2,9 @@
 
 ## Usage
 ```
-if <statement> {
+if <expression> {
     ...
-} else if <statement> {
+} else if <expression> {
     ...
 } else {
     ...
