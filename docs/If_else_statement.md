@@ -10,7 +10,8 @@ if <expression> {
     ...
 }
 ```
-``else if`` and ``else`` is optional. \
+``else if`` and ``else`` are optional.
+
 You can put as many ``else if`` as you want, and one or no ``else``. 
 
 Semicolons are also optional. Therefore, the following is also a valid code.
