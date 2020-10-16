@@ -1,4 +1,4 @@
-# While statement
+# While Statement
 
 ## Usage
 
