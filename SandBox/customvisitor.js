@@ -193,7 +193,7 @@ class customVisitor extends MyGrammarVisitor {
     visitWhilestat(ctx) {
         let value = this.visit(ctx.expr());
 
-        while(value == true) {
+        while (value == true) {
             this.visit(ctx.stat_block());
 
             value = this.visit(ctx.expr());

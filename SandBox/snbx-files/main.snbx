@@ -1,20 +1,10 @@
-let a = 5;
-let b = 4;
+let a = 1;
 
-print "a = " + a + ", b = " + b;
-print "";
-
-print "a + b = " + (a + b);
-print "a - b = " + (a - b);
-print "a * b = " + (a * b);
-print "a / b = " + (a / b);
-print "a ^ b = " + (a ^ b);
-print "";
-
-if a < 3 && b > 0 {
-    print "Hello";
-} else if a >= 3 && b < 0 {
-    print "Hi";
-} else {
-    print "Hey";
+while a<4 {
+    let b = 0;
+    while b<3 {
+        print a+b*3;
+        let b = b+1;
+    }
+    let a = a+1;
 }
