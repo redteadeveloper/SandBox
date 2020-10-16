@@ -1,26 +1,26 @@
-# Printing to console
+# Printing To Console
 
-## Printing string
+## Printing String
 ```
 print "Hello World!";   // Hello World!
 ```
 
-## Printing integer
+## Printing Integer
 ```
 print 123;    // 123
 ```
 
-## Printing float
+## Printing Float
 ```
 print 1.23;   // 1.23
 ```
 
-## Printing boolean
+## Printing Boolean
 ```
 print true;   //true
 ```
 
-## Printing variable
+## Printing Variable
 ```
 let a = "Hello";
 let protected b = 123;
@@ -29,7 +29,7 @@ print a;    // Hello
 print b;    // 123
 ```
 
-## Printing expression
+## Printing Expression
 ```
 print "Hello " + "World";   // Hello World
 print 1 + 2;                // 3
