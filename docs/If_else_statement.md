@@ -24,7 +24,7 @@ else
     ...
 ```
 
-## Example
+## Examples
 ```
 let a = 5;
 
@@ -42,5 +42,5 @@ let b = 3;
 if b == 5
     print "a is equal to 5.";
 else
-    print "a isn't equal to 5.";
+    print "a is not equal to 5.";
 ```
