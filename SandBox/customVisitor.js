@@ -1,5 +1,3 @@
-const { parse } = require('path')
-
 const MyGrammarVisitor = require('./sandboxVisitor.js').sandboxVisitor
 
 class customVisitor extends MyGrammarVisitor {
@@ -7,20 +5,6 @@ class customVisitor extends MyGrammarVisitor {
         super()
         this._hashmap = new Map()
         this._protectedmap = new Map()
-
-        this.getVariable = function(ctx) {
-            if (ctx.INT() != null && ctx.STRING() == null && ctx.VAR() == null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                return parseInt(ctx.INT())
-            } else if (ctx.INT() == null && ctx.STRING() != null && ctx.VAR() == null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                return ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "").split("\n").join("\n")
-            } else if (ctx.INT() == null && ctx.STRING() == null && ctx.VAR() == null && ctx.BOOL() != null && ctx.FLOAT() == null) {
-                return ctx.BOOL().toString() === 'true'
-            } else if (ctx.INT() == null && ctx.STRING() == null && ctx.VAR() == null && ctx.BOOL() == null && ctx.FLOAT() != null) {
-                return parseFloat(ctx.FLOAT().toString())
-            } else {
-                return this._hashmap.get(ctx.VAR().toString()) == undefined ? this._protectedmap.get(ctx.VAR().toString()) : this._hashmap.get(ctx.VAR().toString())
-            }
-        }
 
         this.isFloat = function(n) {
             if(!isNaN(parseFloat(n))) {
