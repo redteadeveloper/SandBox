@@ -4,14 +4,14 @@
   "description": "SandBox Programming Language",
   "main": "index.js",
   "scripts": {
-    "test": "node ./SandBox/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/redteadeveloper/SandBox.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/redteadeveloper/SandBox/issues"
   },
