@@ -1,7 +1,5 @@
 const MyGrammarListener = require('./sandboxListener.js').sandboxListener
 
-
-
 class customListener extends MyGrammarListener {
     
     constructor () {
