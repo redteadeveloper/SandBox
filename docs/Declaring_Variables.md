@@ -1,5 +1,5 @@
-# Declaring variables
-## Unprotected variables
+# Declaring Variables
+## Unprotected Variables
 ```
 let a = "Hi";   // String
 let b = 123;    // Integer
@@ -11,7 +11,7 @@ let f = "Hello " + "World";   // Expression
 let g = 123 != 12345;         // Expression
 ```
 
-## Protected variables
+## Protected Variables
 ```
 let protected a = "Hi";
 let a = 123;    // Error
