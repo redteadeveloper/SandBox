@@ -3,7 +3,7 @@ var fs = require('fs')
 
 var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
 var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
-var customVisitor = require('./customVisitor.js').customVisitor;
+var customVisitor = require('./customvisitor.js').customVisitor;
 
 console.log("\n### SandBox Programming Language 0.1.0 ###\n")
 console.log("======================")
