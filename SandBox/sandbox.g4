@@ -4,11 +4,12 @@ program : block EOF ;
 
 block : statement* ;
 
-statement : let | print | ifstat ;
+statement : let | print | ifstat | whilestat ;
 
-let : 'let' PROT? VAR ASSIGN expr SCOL ;
-print : 'print' expr SCOL ;
-ifstat : 'if' condition_block ('elsif' condition_block)* ('else' stat_block)? ;
+let : LET PROT? VAR ASSIGN expr SCOL ;
+print : PRINT expr SCOL ;
+ifstat : IF condition_block (ELSIF condition_block)* (ELSE stat_block)? ;
+whilestat : WHILE expr stat_block ;
 
 condition_block : expr stat_block ;
 stat_block : OBRACE block CBRACE | statement ;
@@ -40,13 +41,6 @@ fragment VARCHAR : ('A'..'Z') | ('a'..'z') | '_' ;
 fragment STRING_CHAR : ~('"' | '\'');
 fragment DOT : '.';
 
-PROT : 'protected' ;
-BOOL : 'true' | 'false' ;
-VAR : VARCHAR+ ;
-INT : NUMBER+ ;
-FLOAT : NUMBER+ DOT? NUMBER*;
-STRING : ('\'' STRING_CHAR* '\'' | '"' STRING_CHAR* '"') ;
-
 OR : '||';
 AND : '&&';
 EQ : '==';
@@ -63,9 +57,13 @@ MOD : '%';
 POW : '^';
 NOT : '!';
 
-NIL : 'nil';
+LET : 'let' ;
+PRINT : 'print' ;
 IF : 'if';
 ELSE : 'else';
+ELSIF : 'elsif' ;
+WHILE : 'while' ;
+NIL : 'nil';
 
 SCOL : ';';
 ASSIGN : '=';
@@ -79,6 +77,13 @@ TYPE_STR : 'String' ;
 TYPE_INT : 'Int' ;
 TYPE_BOOL : 'Boolean' ;
 TYPE_FLOAT : 'Float' ;
+
+PROT : 'protected' ;
+BOOL : 'true' | 'false' ;
+VAR : VARCHAR+ ;
+INT : NUMBER+ ;
+FLOAT : NUMBER+ DOT? NUMBER*;
+STRING : ('\'' STRING_CHAR* '\'' | '"' STRING_CHAR* '"') ;
 
 COMMENT : '/*' .*? '*/' -> skip ;
 LINE_COMMENT : '//' ~[\r\n]* -> skip ;

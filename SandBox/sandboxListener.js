@@ -65,6 +65,15 @@ sandboxListener.prototype.exitIfstat = function(ctx) {
 };
 
 
+// Enter a parse tree produced by sandboxParser#whilestat.
+sandboxListener.prototype.enterWhilestat = function(ctx) {
+};
+
+// Exit a parse tree produced by sandboxParser#whilestat.
+sandboxListener.prototype.exitWhilestat = function(ctx) {
+};
+
+
 // Enter a parse tree produced by sandboxParser#condition_block.
 sandboxListener.prototype.enterCondition_block = function(ctx) {
 };

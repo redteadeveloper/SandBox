@@ -170,26 +170,31 @@ class customVisitor extends MyGrammarVisitor {
     }
 
     visitIfstat(ctx) {
-        console.log("IFstat")
-        conditions = ctx.condition_block()
+        let conditions = ctx.condition_block()
         let evaluatedBlock = false;
-
-        console.log(conditions)
-
         conditions.forEach(condition => {
             let evaluated = this.visit(condition.expr());
-            console.log(evaluated)
 
             if(evaluated == true) {
                 evaluatedBlock = true;
                 this.visit(condition.stat_block());
-                break;
+                return
             }
 
             if(!evaluatedBlock && ctx.stat_block() != null) {
                 this.visit(ctx.stat_block());
             }
         });
+    }
+
+    visitWhilestat(ctx) {
+        let value = this.visit(ctx.expr());
+
+        while(value == true) {
+            this.visit(ctx.stat_block());
+
+            value = this.visit(ctx.expr());
+        }
     }
 }
 

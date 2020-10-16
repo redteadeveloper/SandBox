@@ -48,6 +48,12 @@ sandboxVisitor.prototype.visitIfstat = function(ctx) {
 };
 
 
+// Visit a parse tree produced by sandboxParser#whilestat.
+sandboxVisitor.prototype.visitWhilestat = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by sandboxParser#condition_block.
 sandboxVisitor.prototype.visitCondition_block = function(ctx) {
   return this.visitChildren(ctx);

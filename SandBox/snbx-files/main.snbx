@@ -1,6 +1,20 @@
 let a = 2;
-let b = 3;
+let b = 4;
 
-print a^b;
+print "a = " + a + ", b = " + b;
+print "";
 
-if a != b print "h";
+print "a + b = " + (a + b);
+print "a - b = " + (a - b);
+print "a * b = " + (a * b);
+print "a / b = " + (a / b);
+print "a ^ b = " + (a ^ b);
+print "";
+
+if a < 3 && b > 0 {
+    print "Hello";
+} else if a >= 3 && b > 0 {
+    print "Hi";
+} else {
+    print "Hey";
+}
