@@ -7,7 +7,8 @@
 </div>
 
 ## About
-SandBox is a simple programming language created by RedTea. \
+SandBox is a simple programming language created by RedTea.
+
 Still in development, stay tuned!
 
 ## Docs
