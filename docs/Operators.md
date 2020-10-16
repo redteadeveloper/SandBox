@@ -1,6 +1,6 @@
 # Operators
 
-## Logical operators
+## Logical Operators
 
 | Operator | Name | Description |
 |     :---      | :---         | :---         |
@@ -8,7 +8,7 @@
 | \|\| | Logical or | Returns true if one of the statements is true |
 | ! | Logical not | Reverse the result, returns false if the result is true | 
 
-## Arithmetic operators
+## Arithmetic Operators
 
 | Operator | Name | Description |
 | :---         | :---         | :---         |
@@ -18,7 +18,7 @@
 | / | Division | Multiplies two values | 
 | % | Modulus | Returns the division remainder | 
 
-## Comparision operators
+## Comparision Operators
 
 | Operator | Name | Example |
 | :---         | :---         | :---         |
