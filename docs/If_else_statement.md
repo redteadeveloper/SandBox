@@ -14,7 +14,7 @@ if <expression> {
 
 You can put as many ``else if`` as you want, and one or no ``else``. 
 
-Semicolons are also optional. Therefore, the following is also a valid code.
+Braces are also optional. Therefore, the following is also a valid code.
 ```
 if <expression>
     ...
