@@ -1,4 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.snbx linguist-detectable
-*.snbx linguist-language=SandBox
