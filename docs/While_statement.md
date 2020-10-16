@@ -3,7 +3,7 @@
 ## Usage
 
 ```
-while <statement> {
+while <expression> {
     ...
 }
 ```
