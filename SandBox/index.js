@@ -1,3 +1,5 @@
+/* eslint no-console: "error" */
+
 var antlr4 = require('antlr4');
 var fs = require('fs');
 
