@@ -35,23 +35,23 @@ class customListener extends MyGrammarListener {
 
         if (ctx.PROT() == null) {
             if (ctx.INT() != null && ctx.STRING() == null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                this._hashmap.set(ctx.VAR().toString(), parseInt(ctx.INT()))
+                this._hashmap.set(ctx.VAR().toString(), parseInt(ctx.INT()));
             } else if (ctx.INT() == null && ctx.STRING() != null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                this._hashmap.set(ctx.VAR().toString(), ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "").split("\n").join("\n"))
+                this._hashmap.set(ctx.VAR().toString(), ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "").split("\n").join("\n"));
             } else if (ctx.INT() == null && ctx.STRING() == null && ctx.BOOL() != null && ctx.FLOAT() == null) {
-                this._hashmap.set(ctx.VAR().toString(), ctx.BOOL().toString() === 'true')
+                this._hashmap.set(ctx.VAR().toString(), ctx.BOOL().toString() === 'true');
             } else if (ctx.INT() == null && ctx.STRING() == null && ctx.BOOL() == null && ctx.FLOAT() != null) {
-                this._hashmap.set(ctx.VAR().toString(), parseFloat(ctx.FLOAT().toString()))
+                this._hashmap.set(ctx.VAR().toString(), parseFloat(ctx.FLOAT().toString()));
             }
         } else {
             if (ctx.INT() != null && ctx.STRING() == null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                this._protectedmap.set(ctx.VAR().toString(), parseInt(ctx.INT()))
+                this._protectedmap.set(ctx.VAR().toString(), parseInt(ctx.INT()));
             } else if (ctx.INT() == null && ctx.STRING() != null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                this._protectedmap.set(ctx.VAR().toString(), ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "").split("\n").join("\n"))
+                this._protectedmap.set(ctx.VAR().toString(), ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "");
             } else if (ctx.INT() == null && ctx.STRING() == null && ctx.BOOL() != null && ctx.FLOAT() == null) {
-                this._protectedmap.set(ctx.VAR().toString(), ctx.BOOL().toString() === 'true')
+                this._protectedmap.set(ctx.VAR().toString(), ctx.BOOL().toString() === 'true');
             } else if (ctx.INT() == null && ctx.STRING() == null && ctx.BOOL() == null && ctx.FLOAT() != null) {
-                this._protectedmap.set(ctx.VAR().toString(), parseFloat(ctx.FLOAT().toString()))
+                this._protectedmap.set(ctx.VAR().toString(), parseFloat(ctx.FLOAT().toString()));
             }
         }
         
