@@ -1,3 +1,5 @@
+/*eslint complexity: ["error", 50]*/
+
 const MyGrammarListener = require('./sandboxListener.js').sandboxListener
 
 class customListener extends MyGrammarListener {
