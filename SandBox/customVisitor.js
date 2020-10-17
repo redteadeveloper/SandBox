@@ -1,4 +1,4 @@
-/* eslint no-console: "error" */
+// eslint-disable-next-line no-console
 
 const MyGrammarVisitor = require('./sandboxVisitor.js').sandboxVisitor;
 
