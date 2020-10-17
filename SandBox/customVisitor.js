@@ -1,16 +1,16 @@
-const MyGrammarVisitor = require('./sandboxVisitor.js').sandboxVisitor
+const MyGrammarVisitor = require('./sandboxVisitor.js').sandboxVisitor;
 
 class customVisitor extends MyGrammarVisitor {
     constructor () {
-        super()
-        this._hashmap = new Map()
-        this._protectedmap = new Map()
+        super();
+        this._hashmap = new Map();
+        this._protectedmap = new Map();
 
         this.isFloat = function(n) {
             if(!isNaN(parseFloat(n))) {
-                return true
+                return true;
             } else {
-                return false
+                return false;
             }
          }
     }
@@ -23,12 +23,12 @@ class customVisitor extends MyGrammarVisitor {
 
     visitLet(ctx) {
         let id = ctx.VAR().toString();
-        if (this._protectedmap.get(id) != undefined) return console.error(`ERROR: '${id}' is an already declared protected variable.`)
+        if (this._protectedmap.get(id) != undefined) return console.error(`ERROR: '${id}' is an already declared protected variable.`);
         let value = this.visit(ctx.expr());
         if (ctx.PROT() == null) {
-            this._hashmap.set(id, typeof value == "object" ? value[0] : value)
+            this._hashmap.set(id, typeof value == "object" ? value[0] : value);
         } else {
-            this._protectedmap.set(id, typeof value == "object" ? value[0] : value)
+            this._protectedmap.set(id, typeof value == "object" ? value[0] : value); a 
         }
     }
 
