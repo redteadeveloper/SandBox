@@ -59,7 +59,7 @@ class customListener extends MyGrammarListener {
 
     exitConvtype(ctx) {
 
-        let startingvariable = this._hashmap.get(ctx.VAR().toString()) == undefined ? this._protectedmap.get(ctx.VAR().toString()) : this._hashmap.get(ctx.VAR().toString())
+        let startingvariable = this._hashmap.get(ctx.VAR().toString()) == undefined ? this._protectedmap.get(ctx.VAR().toString()) : this._hashmap.get(ctx.VAR().toString());
 
         if (ctx.TYPE_BOOL() != null) {
             this._hashmap.get(ctx.VAR().toString()) != undefined ?
@@ -71,7 +71,7 @@ class customListener extends MyGrammarListener {
                 this._protectedmap.set(ctx.VAR().toString(), startingvariable.toString()) 
         } else if (ctx.TYPE_INT() != null) {
             this._hashmap.get(ctx.VAR().toString()) != undefined ?
-                this._hashmap.set(ctx.VAR().toString(), parseInt(startingvariable)) : 
+                this._hashmap.set(ctx.iVAR().toString(), parseInt(startingvariable)) : 
                 this._protectedmap.set(ctx.VAR().toString(), parseInt(startingvariable)) 
         } else {
             var numberPattern = '[0-9]+.?[0-9]*';
