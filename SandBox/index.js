@@ -1,4 +1,4 @@
-/* eslint no-console: "error" */
+// eslint-disable-next-line no-console
 
 var antlr4 = require('antlr4');
 var fs = require('fs');
