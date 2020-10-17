@@ -1,3 +1,5 @@
+/* eslint no-console: "error" */
+
 const MyGrammarVisitor = require('./sandboxVisitor.js').sandboxVisitor;
 
 class customVisitor extends MyGrammarVisitor {
