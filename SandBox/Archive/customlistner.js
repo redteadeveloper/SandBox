@@ -5,28 +5,28 @@ const MyGrammarListener = require('./sandboxListener.js').sandboxListener
 class customListener extends MyGrammarListener {
     
     constructor () {
-        super()
-        this._hashmap = new Map()
-        this._protectedmap = new Map()
+        super();
+        this._hashmap = new Map();
+        this._protectedmap = new Map();
 
         this.getVariable = function(ctx) {
             if (ctx.INT() != null && ctx.STRING() == null && ctx.VAR() == null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                return parseInt(ctx.INT())
+                return parseInt(ctx.INT());
             } else if (ctx.INT() == null && ctx.STRING() != null && ctx.VAR() == null && ctx.BOOL() == null && ctx.FLOAT() == null) {
-                return ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "").split("\n").join("\n")
+                return ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "");
             } else if (ctx.INT() == null && ctx.STRING() == null && ctx.VAR() == null && ctx.BOOL() != null && ctx.FLOAT() == null) {
-                return ctx.BOOL().toString() === 'true'
+                return ctx.BOOL().toString() === 'true';
             } else if (ctx.INT() == null && ctx.STRING() == null && ctx.VAR() == null && ctx.BOOL() == null && ctx.FLOAT() != null) {
-                return parseFloat(ctx.FLOAT().toString())
+                return parseFloat(ctx.FLOAT().toString());
             } else {
-                return this._hashmap.get(ctx.VAR().toString()) == undefined ? this._protectedmap.get(ctx.VAR().toString()) : this._hashmap.get(ctx.VAR().toString())
+                return this._hashmap.get(ctx.VAR().toString()) == undefined ? this._protectedmap.get(ctx.VAR().toString()) : this._hashmap.get(ctx.VAR().toString());
             }
         }
     
     }
     
     exitPrint(ctx) {
-        console.log(this.getVariable(ctx))
+        console.log(this.getVariable(ctx));
     }
 
     exitLet(ctx) {
