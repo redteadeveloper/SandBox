@@ -28,7 +28,7 @@ class customVisitor extends MyGrammarVisitor {
         if (ctx.PROT() == null) {
             this._hashmap.set(id, typeof value == "object" ? value[0] : value);
         } else {
-            this._protectedmap.set(id, typeof value == "object" ? value[0] : value); a 
+            this._protectedmap.set(id, typeof value == "object" ? value[0] : value);
         }
     }
 
