@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-console
-
 const MyGrammarVisitor = require('./sandboxVisitor.js').sandboxVisitor;
 
 class customVisitor extends MyGrammarVisitor {
