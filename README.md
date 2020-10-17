@@ -1,5 +1,5 @@
 <h1 align="center">SandBox</h1>
-<h3 align="center">"SandBox, the new programming language"</h3>
+<h3 align="center">SandBox, the ultimate programming language</h3>
 <div align="center">
   
 ![Generic badge](https://img.shields.io/badge/Version-0.1.0-blue.svg)
