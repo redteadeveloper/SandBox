@@ -1,5 +1,5 @@
-var antlr4 = require('antlr4');
-var fs = require('fs');
+var antlr4 = require("antlr4");
+var fs = require("fs");
 
 var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
 var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
