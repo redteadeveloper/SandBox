@@ -15,6 +15,20 @@ Still in development, stay tuned!
 
 ## Examples
 
+- A simple example of if else statement.
+```
+let a = 3;
+
+if a > 5 {
+    print a;
+} else if a < 5 {
+    print a+1;
+} else {
+    print a+2;
+}
+```
+
+- A simple example of while statement.
 ```
 let a = 1;
 
@@ -28,17 +42,7 @@ while a < 4 {
 }
 ```
 
-```
-let a = 3;
 
-if a > 5 {
-    print a;
-} else if a < 5 {
-    print a+1;
-} else {
-    print a+2;
-}
-```
 
 ## Docs
 [Click here](https://github.com/redteadeveloper/SandBox/tree/main/docs)
