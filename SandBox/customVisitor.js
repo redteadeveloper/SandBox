@@ -17,7 +17,7 @@ class customVisitor extends MyGrammarVisitor {
 
     visitPrint(ctx) {
         let value = this.visit(ctx.expr());
-        console.log(typeof value == "object" ? value[0] : value)
+        console.log(typeof value == "object" ? value[0] : value);
         return typeof value == "object" ? value[0] : value;
     }
 
@@ -34,47 +34,47 @@ class customVisitor extends MyGrammarVisitor {
 
     visitVarAtom(ctx) {
         if (this._hashmap.get(ctx.VAR().toString()) != undefined) {
-            return this._hashmap.get(ctx.VAR().toString())
+            return this._hashmap.get(ctx.VAR().toString());
         } else {
-            return this._protectedmap.get(ctx.VAR().toString()) 
+            return this._protectedmap.get(ctx.VAR().toString());
         }
     }
 
     visitStringAtom(ctx) {
-        return ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "")
+        return ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "");
     }
 
     visitNumberAtom(ctx) {
-        return parseFloat(ctx.INT() != undefined ? ctx.INT().toString() : ctx.FLOAT().toString())
+        return parseFloat(ctx.INT() != undefined ? ctx.INT().toString() : ctx.FLOAT().toString());
     }
 
     visitBooleanAtom(ctx) {
-        return ctx.BOOL().toString() == 'true'
+        return ctx.BOOL().toString() == 'true';
     }
 
     visitNilAtom(ctx) {
-        return null
+        return null;
     }
 
     visitParExpr(ctx) {
-        return this.visit(ctx.expr())
+        return this.visit(ctx.expr());
     }
 
     visitPowExpr(ctx) {
         let left = this.visit(ctx.expr(0));
         let right = this.visit(ctx.expr(1));
 
-        return Math.pow(parseFloat(left), parseFloat(right))
+        return Math.pow(parseFloat(left), parseFloat(right));
     }
 
     visitUnaryMinusExpr(ctx) {
         let value = this.visit(ctx.expr());
-        return parseFloat(-value)
+        return parseFloat(-value);
     }
 
     visitNotExpr(ctx) {
         let value = this.visit(ctx.expr());
-        return !(Boolean(value.toString()))
+        return !(Boolean(value.toString()));
     }
 
     visitMultiplicationExpr(ctx) {
@@ -82,11 +82,11 @@ class customVisitor extends MyGrammarVisitor {
         let right = this.visit(ctx.expr(1));
 
         if (ctx.MULT() != null) {
-            return parseFloat(left.toString()) * parseFloat(right.toString())
+            return parseFloat(left.toString()) * parseFloat(right.toString());
         } else if (ctx.DIV() != null) {
-            return parseFloat(left.toString()) / parseFloat(right.toString())
+            return parseFloat(left.toString()) / parseFloat(right.toString());
         } else if (ctx.MOD() != null) {
-            return parseFloat(left.toString()) % parseFloat(right.toString())
+            return parseFloat(left.toString()) % parseFloat(right.toString());
         } else {
             throw new RuntimeException("unknown operator");
         }
@@ -99,9 +99,9 @@ class customVisitor extends MyGrammarVisitor {
         if (ctx.PLUS() != null) {
             return this.isFloat(left) == true && this.isFloat(right) == true ?
                 parseFloat(left) + parseFloat(right) :
-                left.toString() + right.toString()
+                left.toString() + right.toString();
         } else if (ctx.MINUS() != null) {
-            return parseFloat(left.toString()) - parseFloat(right.toString())
+            return parseFloat(left.toString()) - parseFloat(right.toString());
         } else {
             throw new RuntimeException("unknown operator");
         }
@@ -112,13 +112,13 @@ class customVisitor extends MyGrammarVisitor {
         let right = this.visit(ctx.expr(1));
 
         if (ctx.LT() != null) {
-            return Boolean(parseFloat(left.toString()) < parseFloat(right.toString()))
+            return Boolean(parseFloat(left.toString()) < parseFloat(right.toString()));
         } else if (ctx.LTEQ() != null) {
-            return Boolean(parseFloat(left.toString()) <= parseFloat(right.toString()))
+            return Boolean(parseFloat(left.toString()) <= parseFloat(right.toString()));
         } else if (ctx.GT() != null) {
-            return Boolean(parseFloat(left.toString()) > parseFloat(right.toString()))
+            return Boolean(parseFloat(left.toString()) > parseFloat(right.toString()));
         } else if (ctx.GTEQ() != null) {
-            return Boolean(parseFloat(left.toString()) >= parseFloat(right.toString()))
+            return Boolean(parseFloat(left.toString()) >= parseFloat(right.toString()));
         } else {
             throw new RuntimeException("unknown operator");
         }
@@ -143,29 +143,29 @@ class customVisitor extends MyGrammarVisitor {
         let left = this.visit(ctx.expr(0));
         let right = this.visit(ctx.expr(1));
 
-        return Boolean(left) && Boolean(right)
+        return Boolean(left) && Boolean(right);
     }
 
     visitOrExpr(ctx) {
         let left = this.visit(ctx.expr(0));
         let right = this.visit(ctx.expr(1));
 
-        return Boolean(left) || Boolean(right)
+        return Boolean(left) || Boolean(right);
     }
 
     visitIfstat(ctx) {
-        let conditions = ctx.condition_block()
+        let conditions = ctx.condition_block();
         let evaluatedBlock = false;
 
         for (var i = 0 ; i < conditions.length ; i++) {
-            let condition = conditions[i]
+            let condition = conditions[i];
 
             let evaluated = this.visit(condition.expr());
 
             if (evaluated == true) {
                 evaluatedBlock = true;
                 this.visit(condition.stat_block());
-                break
+                break;
             }
         }
 
