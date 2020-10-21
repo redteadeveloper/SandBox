@@ -13,7 +13,7 @@ SandBox is a simple programming language made with JS & ANTLR4.
 
 Still in development, stay tuned!
 
-## Example
+## Examples
 
 ```
 let a = 1;
@@ -25,6 +25,18 @@ while a < 4 {
         let b = b + 1;
     }
     let a = a + 1;
+}
+```
+
+```
+let a = 3;
+
+if a > 5 {
+    print a;
+} else if a < 5 {
+    print a+1;
+} else {
+    print a+2;
 }
 ```
 
