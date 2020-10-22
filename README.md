@@ -20,11 +20,11 @@ Still in development, stay tuned!
 let a = 3;
 
 if a > 5 {
-    print a;
+    print "Hi";
 } else if a < 5 {
-    print a+1;
+    print "Hello"
 } else {
-    print a+2;
+    print a;
 }
 ```
 
