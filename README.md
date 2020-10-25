@@ -16,7 +16,7 @@ Still in development, stay tuned!
 ## Examples
 
 - A simple example of if else statement.
-```ruby
+```
 let a = 3;
 
 if a > 5 {
@@ -29,7 +29,7 @@ if a > 5 {
 ```
 
 - A simple example of while statement.
-```ruby
+```
 let a = 1;
 
 while a < 4 {
