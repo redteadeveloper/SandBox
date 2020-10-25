@@ -9,7 +9,7 @@
 </div>
 
 ## About
-SandBox is a simple programming language made with JS & ANTLR4.
+SandBox is a simple programming language made of JS & ANTLR4.
 
 Still in development, stay tuned!
 
