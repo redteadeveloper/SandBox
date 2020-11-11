@@ -32,7 +32,7 @@ print(" ");
 
 let b = 1;
 
-while b < 100 {
+while b <= 100 {
     if b % 15 == 0 {
         print("FizzBuzz");
     } else if b % 5 == 0 {
