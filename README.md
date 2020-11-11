@@ -27,12 +27,12 @@ while a < 100 {
     } else if a == 98 {
         print("1 bottle of beer on the wall, 1 bottle of beer.");
         print("Take it down and pass it around, no more bottles of beer on the wall.");
-        print(" ");
+        print("");
     } else {
         let b = 100 - a;
         print(b + " bottles of beer on the wall, " + b + " bottles of beer.");
         print("Take one down and pass it around, " + (b - 1) + " bottles of beer on the wall.");
-        print(" ");
+        print("");
     }
     let a = a + 1;
 }
