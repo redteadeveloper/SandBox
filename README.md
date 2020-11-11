@@ -37,7 +37,23 @@ while a < 100 {
 }
 ```
 
+- FizzBuzz
+```
+let a = 1;
 
+while a < 100 {
+    if a%15 == 0 {
+        print("FizzBuzz");
+    } else if a%5 == 0 {
+        print("Buzz");
+    } else if a%3 == 0 {
+        print("Fizz");
+    } else {
+        print(a);
+    }
+    let a = a + 1;
+}
+```
 
 ## Docs
 [Click here](https://github.com/redteadeveloper/SandBox/tree/main/docs)
