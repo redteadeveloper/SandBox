@@ -1,5 +1,5 @@
 <h1 align="center">SandBox</h1>
-<h3 align="center">Easy to write, easy to read</h3>
+<h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
   ![Generic badge](https://img.shields.io/badge/Version-0.1.1-blue.svg)
@@ -11,6 +11,8 @@
 ## About
 
 SandBox is a simple programming language made of JS & ANTLR4.
+
+Our philosophy is: <b>Programming languages must be easy to read \& write.</b> 
 
 Currently in development, stay tuned!
 
