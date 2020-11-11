@@ -6,13 +6,9 @@ class customVisitor extends MyGrammarVisitor {
         this._hashmap = new Map();
         this._protectedmap = new Map();
 
-        this.isFloat = function(n) {
-            if(!isNaN(parseFloat(n))) {
-                return true;
-            } else {
-                return false;
-            }
-         }
+        this.isFloat = function(value) {
+            return !isNaN(value)
+        }
     }
 
     visitPrint(ctx) {

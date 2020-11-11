@@ -7,7 +7,7 @@ block : statement* ;
 statement : let | print | ifstat | whilestat ;
 
 let : LET PROT? VAR ASSIGN expr SCOL ;
-print : PRINT expr SCOL ;
+print : PRINT OPAR expr CPAR SCOL ;
 ifstat : IF condition_block (ELSE IF condition_block)* (ELSE stat_block)? ;
 whilestat : WHILE expr stat_block ;
 
@@ -38,7 +38,7 @@ atom
 
 fragment NUMBER : '0'..'9' ;
 fragment VARCHAR : ('A'..'Z') | ('a'..'z') | '_' ;
-fragment STRING_CHAR : ~('"' | '\'');
+fragment STRING_CHAR : ~('"');
 fragment DOT : '.';
 
 OR : '||';
@@ -82,7 +82,7 @@ BOOL : 'true' | 'false' ;
 VAR : VARCHAR+ ;
 INT : NUMBER+ ;
 FLOAT : NUMBER+ DOT? NUMBER*;
-STRING : ('\'' STRING_CHAR* '\'' | '"' STRING_CHAR* '"') ;
+STRING : ('"' STRING_CHAR* '"') ;
 
 COMMENT : '/*' .*? '*/' -> skip ;
 LINE_COMMENT : '//' ~[\r\n]* -> skip ;
