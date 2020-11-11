@@ -25,7 +25,7 @@ while a < 100 {
 print(" ");
 print(" ");
 
-// FizzBuzz
+// FizzBuzz program
 
 print("# FizzBuzz #");
 print(" ");
