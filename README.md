@@ -11,7 +11,7 @@
 ## About
 SandBox is a simple programming language made of JS & ANTLR4.
 
-Still in development, stay tuned!
+Currently in development, stay tuned!
 
 ## Examples
 
