@@ -42,11 +42,11 @@ while a < 100 {
 let a = 1;
 
 while a < 100 {
-    if a%15 == 0 {
+    if a % 15 == 0 {
         print("FizzBuzz");
-    } else if a%5 == 0 {
+    } else if a % 5 == 0 {
         print("Buzz");
-    } else if a%3 == 0 {
+    } else if a % 3 == 0 {
         print("Fizz");
     } else {
         print(a);
