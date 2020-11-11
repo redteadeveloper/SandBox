@@ -12,7 +12,7 @@
 
 SandBox is a simple programming language made of JS & ANTLR4.
 
-Our philosophy is: <b>Programming languages must be easy to read \& write.</b> 
+Our philosophy is: <b>Programming languages must be easy to `read` \& `write`.</b> 
 
 Currently in development, stay tuned!
 
