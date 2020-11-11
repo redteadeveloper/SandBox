@@ -15,28 +15,23 @@ Still in development, stay tuned!
 
 ## Examples
 
-- A simple example of if else statement.
-```
-let a = 3;
-
-if a > 5 {
-    print "Hi";
-} else if a < 5 {
-    print "Hello"
-} else {
-    print a;
-}
-```
-
-- A simple example of while statement.
+- 99 Bottles of Beer
 ```
 let a = 1;
 
-while a < 4 {
-    let b = 0;
-    while b < 3 {
-        print a + b * 3;
-        let b = b + 1;
+while a < 100 {
+    if a == 99 {
+        print("No more bottles of beer on the wall, no more bottles of beer.");
+        print("Go to the store and buy some more, 99 bottles of beer on the wall.");
+    } else if a == 98 {
+        print("1 bottle of beer on the wall, 1 bottle of beer.");
+        print("Take it down and pass it around, no more bottles of beer on the wall.");
+        print(" ");
+    } else {
+        let b = 100 - a;
+        print(b + " bottles of beer on the wall, " + b + " bottles of beer.");
+        print("Take one down and pass it around, " + (b - 1) + " bottles of beer on the wall.");
+        print(" ");
     }
     let a = a + 1;
 }
