@@ -1,5 +1,8 @@
 // 99 Bottles of Beer program
 
+print("# 99 Bottles of Beer #");
+print(" ");
+
 let a = 1;
 
 while a < 100 {
@@ -17,4 +20,27 @@ while a < 100 {
         print(" ");
     }
     let a = a + 1;
+}
+
+print(" ");
+print(" ");
+
+// FizzBuzz
+
+print("# FizzBuzz #");
+print(" ");
+
+let b = 1;
+
+while b < 100 {
+    if b % 15 == 0 {
+        print("FizzBuzz");
+    } else if b % 5 == 0 {
+        print("Buzz");
+    } else if b % 3 == 0 {
+        print("Fizz");
+    } else {
+        print(b);
+    }
+    let b = b + 1;
 }
