@@ -7,7 +7,7 @@ class customVisitor extends MyGrammarVisitor {
         this._protectedmap = new Map();
 
         this.isFloat = function(value) {
-            return !isNaN(value)
+            return !isNaN(value);
         }
     }
 
