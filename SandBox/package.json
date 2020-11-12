@@ -4,7 +4,7 @@
   "description": "SandBox Programming Language",
   "main": "index.js",
   "bin" : {
-    "app" : "./SandBox/index.js"
+    "app" : "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
