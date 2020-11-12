@@ -74,6 +74,8 @@ while a <= 100 {
 
 3. Run `npm install` command.
 
+4. Run `npm install --save-dev pkg` command.
+
 4. Run `pkg .` command.
 
 
