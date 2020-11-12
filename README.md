@@ -2,7 +2,7 @@
 <h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
-  ![Generic badge](https://img.shields.io/badge/Version-0.1.1-blue.svg)
+  ![Generic badge](https://img.shields.io/badge/Version-0.1.2-blue.svg)
   [![Library](https://img.shields.io/badge/ANTLR_version-4.8.0-blueviolet)](https://www.antlr.org/)
   [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c637f71ed86f489e8100ce9dc6f04e45)](https://www.codacy.com/gh/redteadeveloper/SandBox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=redteadeveloper/SandBox&amp;utm_campaign=Badge_Grade)
   
@@ -58,6 +58,20 @@ while a <= 100 {
 }
 ```
 
-## Docs
+## Known Issues
+
+None.
+
+If you find an issue, please report it [here](https://github.com/redteadeveloper/SandBox/issues).
+
+## Documentation
 
 [Click here](https://github.com/redteadeveloper/SandBox/tree/main/docs)
+
+## Credits
+
+<b>SandBox</b> is made by <b>[RedTea](https://github.com/redteadeveloper)</b>.
+
+### Works Cited
+
+- https://github.com/bkiers/Mu
