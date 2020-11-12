@@ -5,7 +5,7 @@ var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
 var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
 var customVisitor = require('./customVisitor.js').customVisitor;
 
-console.log("\n### SandBox Programming Language 0.1.0 ###\n");
+console.log("\n### SandBox Programming Language 0.1.2 ###\n");
 console.log("======================");
 console.log("RESULT:");
 console.log("----------------------");
