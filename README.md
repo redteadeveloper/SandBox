@@ -58,6 +58,25 @@ while a <= 100 {
 }
 ```
 
+## Building
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [pkg module](https://www.npmjs.com/package/pkg)
+
+### Build
+
+1. Clone this repository.
+
+2. Open cmd and move to SandBox folder.
+
+3. Run `npm install` command.
+
+4. Run `pkg .` command.
+
+
 ## Known Issues
 
 None.
