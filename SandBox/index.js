@@ -1,19 +1,19 @@
 var antlr4 = require("antlr4");
 var fs = require("fs");
-var readline = require('readline')
+var readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-})
+});
 
 rl.question("Enter .snbx file path: ", function(path) {
 
     if (!path.endsWith(".snbx")) {
-        return console.log("Not a .snbx file. Press Ctrl + c to exit.")
+        return console.log("Not a .snbx file. Press Ctrl + c to exit.");
     }
 
-    let filepath = path
+    let filepath = path;
 
     var MyGrammarLexer = require('./sandboxLexer.js').sandboxLexer;
     var MyGrammarParser = require('./sandboxParser.js').sandboxParser;
@@ -22,7 +22,7 @@ rl.question("Enter .snbx file path: ", function(path) {
     try {
         var input = fs.readFileSync(filepath).toString();
     } catch {
-        return console.log("Couldn't find file. Press Ctrl + c to exit.")
+        return console.log("Couldn't find file. Press Ctrl + c to exit.");
     }
 
     console.log("\n### SandBox Programming Language 0.1.2 ###\n");
