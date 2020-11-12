@@ -37,7 +37,7 @@ class customVisitor extends MyGrammarVisitor {
     }
 
     visitStringAtom(ctx) {
-        return ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, "").replace(/\\"/gi, "");
+        return ctx.STRING().toString().slice(0, -1).substring(1).replace(/\\"/gi, "\"");
     }
 
     visitNumberAtom(ctx) {
