@@ -62,7 +62,7 @@ while a <= 100 {
 
 None.
 
-If you find an issue, please report it [here](https://github.com/redteadeveloper/SandBox/issues)
+If you find an issue, please report it [here](https://github.com/redteadeveloper/SandBox/issues).
 
 ## Docs
 
