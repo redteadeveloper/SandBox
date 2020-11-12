@@ -2,7 +2,7 @@
 
 ## Usage
 
-- Double quote is replaced with \"
+- Double quote is replaced with \\"
 
 ## Examples
 
