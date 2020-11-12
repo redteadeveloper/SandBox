@@ -1,4 +1,5 @@
-<h1 align="center">SandBox</h1>
+<img width="640" height="360" align="center" style="float: left; margin: 0 10px 0 0;" alt="Plex" src="logo.png">  
+<h1 align="center"></h1>
 <h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
