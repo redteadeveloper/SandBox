@@ -41,6 +41,7 @@ fragment NUMBER : '0'..'9' ;
 fragment VARCHAR : ('A'..'Z') | ('a'..'z') | '_' ;
 fragment STRING_CHAR : ~('"');
 fragment DOT : '.';
+fragment ESCAPED_QUOTE : '\\"';
 
 OR : '||';
 AND : '&&';
@@ -84,7 +85,7 @@ BOOL : 'true' | 'false' ;
 VAR : VARCHAR+ ;
 INT : NUMBER+ ;
 FLOAT : NUMBER+ DOT? NUMBER*;
-STRING : ('"' STRING_CHAR* '"') ;
+STRING : '"' (STRING_CHAR | ESCAPED_QUOTE)* '"' ;
 
 COMMENT : '/*' .*? '*/' -> skip ;
 LINE_COMMENT : '//' ~[\r\n]* -> skip ;
