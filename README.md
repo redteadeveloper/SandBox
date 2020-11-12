@@ -62,14 +62,18 @@ while a <= 100 {
 
 ### Prerequisites
 
-- Node.js
-- npm
-- pkg module
+- [Node.js](https://nodejs.org/)
+
+- [npm](https://www.npmjs.com/)
+
+- [pkg module](https://www.npmjs.com/package/pkg)
 
 ### Build
 
 1. Clone this repository.
+
 2. Open cmd and move to SandBox folder.
+
 3. Run `pkg .` command.
 
 
