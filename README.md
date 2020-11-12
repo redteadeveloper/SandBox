@@ -67,3 +67,11 @@ If you find an issue, please report it [here](https://github.com/redteadeveloper
 ## Docs
 
 [Click here](https://github.com/redteadeveloper/SandBox/tree/main/docs)
+
+## Credits
+
+<b>SandBox</b> is made by <b>[RedTea](https://github.com/redteadeveloper)</b>.
+
+### Works Cited
+
+- https://github.com/bkiers/Mu
