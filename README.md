@@ -58,6 +58,21 @@ while a <= 100 {
 }
 ```
 
+## Building
+
+### Prerequisites
+
+- Node.js
+- npm
+- pkg module
+
+### Build
+
+1. Clone this repository.
+2. Open cmd and move to SandBox folder.
+3. Run `pkg .` command.
+
+
 ## Known Issues
 
 None.
