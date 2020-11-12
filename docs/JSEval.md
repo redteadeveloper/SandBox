@@ -11,7 +11,7 @@ jsEval(...);
 ```
 jsEval("console.log('Hello World!')");   // Hello World!
 
-jsEval("console.log(1+2)");                // 3
+jsEval("console.log(1+2)");              // 3
 
 jsEval("
 
@@ -21,7 +21,7 @@ jsEval("
         console.log(\"B\");
     }
     
-");                                        // A
+");                                      // A
 ```
 
 Learn more about <b>escaping characters</b> here.
