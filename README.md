@@ -1,4 +1,4 @@
-<p align="center"><img width="450" height="150" align="center" style="float: left; margin: 0 10px 0 0;" alt="Logo" src="sandbox.png"></p>
+<h1 align="center">SandBox</h1>
 <h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
