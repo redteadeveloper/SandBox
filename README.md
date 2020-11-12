@@ -64,7 +64,7 @@ None.
 
 If you find an issue, please report it [here](https://github.com/redteadeveloper/SandBox/issues).
 
-## Docs
+## Documentation
 
 [Click here](https://github.com/redteadeveloper/SandBox/tree/main/docs)
 
