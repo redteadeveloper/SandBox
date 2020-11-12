@@ -64,7 +64,6 @@ while a <= 100 {
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
-- [pkg module](https://www.npmjs.com/package/pkg)
 
 ### Build
 
