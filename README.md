@@ -72,7 +72,9 @@ while a <= 100 {
 
 2. Open cmd and move to SandBox folder.
 
-3. Run `pkg .` command.
+3. Run `npm install` command.
+
+4. Run `pkg .` command.
 
 
 ## Known Issues
