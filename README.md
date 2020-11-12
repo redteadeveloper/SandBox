@@ -77,6 +77,12 @@ while a <= 100 {
 
 4. Run `pkg .` command.
 
+### Sample
+
+- [Windows](https://drive.google.com/file/d/1NPiQKRp1j__APJLnVZUgU9Wh8R12fTZP/view?usp=sharing)
+- [MacOS](https://drive.google.com/file/d/1gdR9f1YEUHHCKYNl21R4rOGCcZpwFjoV/view?usp=sharing)
+- [Linux](https://drive.google.com/file/d/1XRsDA7D0LZWOKl0OjJLSXJrULSF0IadP/view?usp=sharing)
+
 
 ## Known Issues
 
