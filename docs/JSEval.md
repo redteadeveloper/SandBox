@@ -24,4 +24,4 @@ jsEval("
 ");                                      // A
 ```
 
-Learn more about <b>escaping characters</b> [here](https://github.com/redteadeveloper/SandBox/blob/main/docs/Escape_Characters.md).
+Learn more about <b>escape characters</b> [here](https://github.com/redteadeveloper/SandBox/blob/main/docs/Escape_Characters.md).
