@@ -54,6 +54,12 @@ sandboxVisitor.prototype.visitWhilestat = function(ctx) {
 };
 
 
+// Visit a parse tree produced by sandboxParser#jseval.
+sandboxVisitor.prototype.visitJseval = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by sandboxParser#condition_block.
 sandboxVisitor.prototype.visitCondition_block = function(ctx) {
   return this.visitChildren(ctx);

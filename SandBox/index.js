@@ -14,15 +14,14 @@ var input = fs.readFileSync("./snbx-files/main.snbx").toString();
 
 var chars = new antlr4.InputStream(input);
 var lexer = new MyGrammarLexer(chars);
-lexer.removeErrorListeners();
-
 var tokens  = new antlr4.CommonTokenStream(lexer);
 var parser = new MyGrammarParser(tokens);
+var visitor = new customVisitor();
+
+lexer.removeErrorListeners();
 parser.buildParseTrees = true;
 
 var tree = parser.program();
-
-var visitor = new customVisitor();
 visitor.visit(tree);
 
 console.log("======================\n");

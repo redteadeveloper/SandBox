@@ -13,8 +13,8 @@ class customVisitor extends MyGrammarVisitor {
 
     visitPrint(ctx) {
         let value = this.visit(ctx.expr());
-        console.log(typeof value == "object" ? value[0] : value);
-        return typeof value == "object" ? value[0] : value;
+        console.log(Array.isArray(value) ? value[0] : value);
+        return Array.isArray(value) ? value[0] : value;
     }
 
     visitLet(ctx) {
@@ -22,9 +22,9 @@ class customVisitor extends MyGrammarVisitor {
         if (this._protectedmap.get(id) != undefined) return console.error(`ERROR: '${id}' is an already declared protected variable.`);
         let value = this.visit(ctx.expr());
         if (ctx.PROT() == null) {
-            this._hashmap.set(id, typeof value == "object" ? value[0] : value);
+            this._hashmap.set(id, Array.isArray(value) ? value[0] : value);
         } else {
-            this._protectedmap.set(id, typeof value == "object" ? value[0] : value);
+            this._protectedmap.set(id, Array.isArray(value) ? value[0] : value);
         }
     }
 
@@ -175,9 +175,12 @@ class customVisitor extends MyGrammarVisitor {
 
         while (value == true) {
             this.visit(ctx.stat_block());
-
             value = this.visit(ctx.expr());
         }
+    }
+
+    visitJseval(ctx) {
+        eval(ctx.STRING().toString().replace(/"/gi, "").replace(/'/gi, ""));
     }
 }
 

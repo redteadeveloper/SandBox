@@ -74,6 +74,15 @@ sandboxListener.prototype.exitWhilestat = function(ctx) {
 };
 
 
+// Enter a parse tree produced by sandboxParser#jseval.
+sandboxListener.prototype.enterJseval = function(ctx) {
+};
+
+// Exit a parse tree produced by sandboxParser#jseval.
+sandboxListener.prototype.exitJseval = function(ctx) {
+};
+
+
 // Enter a parse tree produced by sandboxParser#condition_block.
 sandboxListener.prototype.enterCondition_block = function(ctx) {
 };

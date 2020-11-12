@@ -4,12 +4,13 @@ program : block EOF ;
 
 block : statement* ;
 
-statement : let | print | ifstat | whilestat ;
+statement : let | print | ifstat | whilestat | jseval ;
 
 let : LET PROT? VAR ASSIGN expr SCOL ;
 print : PRINT OPAR expr CPAR SCOL ;
 ifstat : IF condition_block (ELSE IF condition_block)* (ELSE stat_block)? ;
 whilestat : WHILE expr stat_block ;
+jseval : JSEV OPAR STRING CPAR SCOL ;
 
 condition_block : expr stat_block ;
 stat_block : OBRACE block CBRACE | statement ;
@@ -59,6 +60,7 @@ NOT : '!';
 
 LET : 'let' ;
 PRINT : 'print' ;
+JSEV : 'jsEval' ;
 IF : 'if';
 ELSE : 'else';
 WHILE : 'while' ;
