@@ -1,17 +1,20 @@
 <h1 align="center">SandBox</h1>
-<h3 align="center">SandBox, the ultimate programming language</h3>
+<h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
-![Generic badge](https://img.shields.io/badge/Version-0.1.1-blue.svg)
-[![Library](https://img.shields.io/badge/ANTLR_version-4.8.0-blueviolet)](https://www.antlr.org/)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c637f71ed86f489e8100ce9dc6f04e45)](https://www.codacy.com/gh/redteadeveloper/SandBox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=redteadeveloper/SandBox&amp;utm_campaign=Badge_Grade)
-
+  ![Generic badge](https://img.shields.io/badge/Version-0.1.1-blue.svg)
+  [![Library](https://img.shields.io/badge/ANTLR_version-4.8.0-blueviolet)](https://www.antlr.org/)
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c637f71ed86f489e8100ce9dc6f04e45)](https://www.codacy.com/gh/redteadeveloper/SandBox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=redteadeveloper/SandBox&amp;utm_campaign=Badge_Grade)
+  
 </div>
 
 ## About
+
 SandBox is a simple programming language made of JS & ANTLR4.
 
-Still in development, stay tuned!
+Our philosophy is: <b>Programming languages must be easy to `read` \& `write`.</b> 
+
+Currently in development, stay tuned!
 
 ## Examples
 
@@ -26,12 +29,12 @@ while a < 100 {
     } else if a == 98 {
         print("1 bottle of beer on the wall, 1 bottle of beer.");
         print("Take it down and pass it around, no more bottles of beer on the wall.");
-        print(" ");
+        print("");
     } else {
         let b = 100 - a;
         print(b + " bottles of beer on the wall, " + b + " bottles of beer.");
         print("Take one down and pass it around, " + (b - 1) + " bottles of beer on the wall.");
-        print(" ");
+        print("");
     }
     let a = a + 1;
 }
@@ -41,7 +44,7 @@ while a < 100 {
 ```
 let a = 1;
 
-while a < 100 {
+while a <= 100 {
     if a % 15 == 0 {
         print("FizzBuzz");
     } else if a % 5 == 0 {
@@ -56,4 +59,5 @@ while a < 100 {
 ```
 
 ## Docs
+
 [Click here](https://github.com/redteadeveloper/SandBox/tree/main/docs)
