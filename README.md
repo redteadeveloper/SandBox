@@ -2,7 +2,7 @@
 <h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
-  ![Generic badge](https://img.shields.io/badge/Version-0.1.2-blue.svg)
+  ![Generic badge](https://img.shields.io/badge/Version-0.1.4-blue.svg)
   [![Library](https://img.shields.io/badge/ANTLR_version-4.8.0-blueviolet)](https://www.antlr.org/)
   [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c637f71ed86f489e8100ce9dc6f04e45)](https://www.codacy.com/gh/redteadeveloper/SandBox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=redteadeveloper/SandBox&amp;utm_campaign=Badge_Grade)
   
