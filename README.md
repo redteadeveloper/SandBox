@@ -2,7 +2,7 @@
 <h3 align="center">Easy to read. Easy to write.</h3>
 <div align="center">
   
-  ![Generic badge](https://img.shields.io/badge/Version-0.1.2-blue.svg)
+  ![Generic badge](https://img.shields.io/badge/Version-0.1.4-blue.svg)
   [![Library](https://img.shields.io/badge/ANTLR_version-4.8.0-blueviolet)](https://www.antlr.org/)
   [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c637f71ed86f489e8100ce9dc6f04e45)](https://www.codacy.com/gh/redteadeveloper/SandBox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=redteadeveloper/SandBox&amp;utm_campaign=Badge_Grade)
   
@@ -64,7 +64,6 @@ while a <= 100 {
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
-- [pkg module](https://www.npmjs.com/package/pkg)
 
 ### Build
 
@@ -74,7 +73,15 @@ while a <= 100 {
 
 3. Run `npm install` command.
 
+4. Run `npm install --save-dev pkg` command.
+
 4. Run `pkg .` command.
+
+### Samples (0.1.4)
+
+- [Windows](https://drive.google.com/file/d/1NPiQKRp1j__APJLnVZUgU9Wh8R12fTZP/view?usp=sharing)
+- [MacOS](https://drive.google.com/file/d/1gdR9f1YEUHHCKYNl21R4rOGCcZpwFjoV/view?usp=sharing)
+- [Linux](https://drive.google.com/file/d/1XRsDA7D0LZWOKl0OjJLSXJrULSF0IadP/view?usp=sharing)
 
 
 ## Known Issues
